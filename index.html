@@ -1,0 +1,120 @@
+<html lang="br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="sudoku.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+
+
+   
+
+
+<!-- Criando 3 divs para usuario navegar no mesmo hmtl-->
+
+    <div class="TabControl">
+        <div id="header">
+            <ul class="abas">
+                <li>
+                    <div class="aba">
+                        <span>Jogar</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="aba">
+                        <span>Sudoku</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="aba">
+                        <span>Sobre</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="conteudo">
+                
+<!-- botao direcionado para o html -->
+
+                <div>
+                    <a href="index.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Novo Jogo
+                    </a>
+                </div>
+
+<!-- id da tabela -->
+
+                <table id="grade"></table>
+                </div>
+            <div class="conteudo">
+
+<!-- conteudo -->
+
+                <h1>Sudoku</h1>
+
+                <p>O <strong><span id="txt-preto">SuDoku</span></strong> é uma palavra de origem japonesa, e significa “os números têm que ser únicos”. O jogo foi criado pelo matemático suíço Leonhard Euler no século 18 e aprimorado nos anos 80 pelo japonês Maki Kaji.</em></p>
+                <p>Jogar Sudoku relaxa e diverte enquanto melhora habilidades mentais. Melhora a memória, o raciocínio lógico, poder de dedução, poder de decisão.
+                    Com paciência e humildade o jogador pode enfrentar quebra-cabeças cada vez mais difíceis.
+                    Resolver um quebra-cabeça corretamente o motiva a tentar outros em níveis cada vez mais difíceis.
+                
+                </p>
+                    
+            <ul>
+            <h2>Como Jogar o Sudoku!</h2>
+			<p>Como funciona a dinamica do sudoku:</p>
+			
+                <li>Não é preciso fazer nenhuma conta</li>
+				<li>O primeiro passo é analisar cada linha</li>
+				<li>O ideal é anotar todas as possibilidades</li>
+                <li>O jogador precisa distribuir os numeros 1 a 9</li>
+                <li>basta espalhar os algarismos sem repeti-los na horizontal e vertical</li>
+			</ul>
+
+<!-- imagens da div 2 -->
+            
+            <img src="https://sudokubrasil.com.br/wp-content/uploads/2022/10/Sudoku-001.jpg" align="left" height="350" width="350">
+            <img src="https://media.istockphoto.com/photos/sudoku-puzzle-picture-id125545465?k=6&m=125545465&s=612x612&w=0&h=c4Tgl5phbKpCnLBMs4W-l0b6RINQKmuRnGuAizpDozY=" align="right" height="300" width="450">
+    
+<!-- conteudo -->
+
+            </div>
+
+            <div class="conteudo">
+                 <h1>Autor</h1>
+
+                <p><strong><span id="txt-preto"></span></strong>O projeto Sudoku foi desenvolvido por Jean 
+                <p>O intuito foi contruir um site completo e navegável em uma única página HTML, 
+                    utilizando CSS e imagens conforme necessário. Além do conteúdo principal 
+                    foi produzido ao menos uma seção navegável de apresentação e outra com informações 
+                    sobre os autores (A implementação do projeto foi escrita exclusivamente em JavaScript puro ou 
+                    JavasScript + jQuery) Com objetivo final apresentar ao usuário um problema de Sudoku e permitir a sua resolução. </em></p>
+                    
+            <ul>
+                
+                <img src="https://media.istockphoto.com/vectors/user-icon-vector-with-laptop-computer-male-person-profile-avatar-for-vector-id898397540?k=6&m=898397540&s=170667a&w=0&h=-J8W8GyZxXD4tsP0FCh6zbeNQLLViN4oepxnIZKdBxA=" align="right" height="350" width="350">
+
+            <h2>Nesse projeto foi feito!</h2>
+			
+                <li>Uma grade Sudoku resolvível diferente a cada início da partida</li>
+				<li>Foi feito um alertar em tempo real se o jogador tentar uma jogada inválida.</li>
+                <li>E detectar e avisar quando o jogo for resolvido com sucesso.</li>
+                <li>Permitir que o usuário possa clicar em cada célula vazia e escolher um número de 1 a 9.</li> 
+                <li>https://github.com/JeanGon</li>
+                
+
+
+                
+                 
+			</ul>
+            </div>
+        </div>
+        
+</html>

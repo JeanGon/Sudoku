@@ -1,0 +1,238 @@
+
+ /*definindo tamanho e alinhamento do nosso input*/
+
+
+input { 
+    height:60px;
+    width:60px;
+    text-align: center;
+    transform: scale(1.05);
+    font-size: xx-large;
+    outline: none;
+}
+
+
+/*criando botao neon*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+a{
+    position: absolute;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    top: 300px;
+    left: 250px;
+}
+a:hover{
+    background: #c003f4;
+    color: #050801;
+    box-shadow: 0 0 5px #c003f4,
+                0 0 25px #c003f4,
+                0 0 50px #c003f4,
+                0 0 200px #c003f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#c003f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#c003f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#c003f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#c003f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+/*definindo tamanho e alinhamento dos textos da div*/
+
+
+h1{
+	font: 2rem 'Roboto', cursive;
+	color: rgb(36, 36, 36);
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+p{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: rgb(77, 77, 77);
+	text-align: justify;
+	line-height: 30px;
+}
+
+h2{
+	font: 2rem 'Roboto', cursive;
+	color: rgb(36, 36, 36);
+	margin-bottom: 20px;
+}
+
+ul{
+	list-style-type: circle;
+	padding: 20px  50px;
+}
+
+li{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: rgb(77, 77, 77);
+	margin-bottom: 10px;
+}
+
+img, ul, h2{
+	display: inline-block;
+}
+
+
+
+/*definindo fundo do body*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white; /* Define o background como branco */
+  }
+
+
+/*definindo formatação da tabela*/
+
+
+table {
+    margin:2em auto;
+}
+
+td:first-child {
+    border-left:4px solid;
+}
+td:nth-child(3n) {
+    border-right:4px solid;
+}
+tr:first-child td{
+    border-top:4px solid;
+}
+tr:nth-child(3n) td{
+    border-bottom:4px solid;
+
+
+
+
+
+
+/*configurando a div*/
+
+
+}
+
+body{font-family:Calibri, Tahoma, Arial}
+	.TabControl{ width:100%; overflow:hidden; height:700px}
+	.TabControl #header{ width:100%; border: solid 0px; overflow:hidden; cursor:hand}
+	.TabControl #content{ width:100%; border: solid 0px;overflow:hidden; height:100%; }
+	.TabControl .abas{display:inline;}
+	.TabControl .abas li{float:left}
+	.aba{width:100px; height:30px; border:solid 0px; border-radius:5px 5px 0 0;
+		text-align:center; padding-top:5px; background:#a7baf5}
+	.ativa{width:100px; height:30px; border:solid 0 px; border-radius:5px 5px 0 0;
+		text-align:center; padding-top:5px; background:#3f579e;}
+	.ativa span, .selected span{color:#fff}
+	.TabControl .conteudo{width:100%;  background:#ffffff00; display:none; height:100%;color:#fff}
+	.selected{width:100px; height:30px; border:solid 0 px; border-radius:5px 5px 0 0;
+		text-align:center; padding-top:5px; background:#27408B}
+
+
+
+        .container-imagens{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
